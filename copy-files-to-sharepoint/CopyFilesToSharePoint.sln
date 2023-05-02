@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32421.90
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CopyFilesToSharePoint", "CopyFilesToSharepoint\CopyFilesToSharePoint.csproj", "{0D6D01A7-51C8-4BF8-A7C9-9317FB466E34}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CopyFilesToSharePoint.Tests", "CopyFilesToSharepoint.Tests\CopyFilesToSharePoint.Tests.csproj", "{174A6700-E9BE-42DC-8998-21B7163E0573}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Deployment", "Deployment", "{6C0D0EAC-3F7C-4A45-B0D4-088777571204}"
+	ProjectSection(SolutionItems) = preProject
+		deployment\build.cake = deployment\build.cake
+		deployment\Dev.Deploy.bat = deployment\Dev.Deploy.bat
+		deployment\lsa-wrapper.cake = deployment\lsa-wrapper.cake
+		deployment\Prod.Deploy.bat = deployment\Prod.Deploy.bat
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "settings", "settings", "{424D6E6C-09E1-41E9-A632-FBFA78AA0D40}"
+	ProjectSection(SolutionItems) = preProject
+		deployment\settings\dev.json = deployment\settings\dev.json
+		deployment\settings\prod.json = deployment\settings\prod.json
+		deployment\settings\uat.json = deployment\settings\uat.json
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0D6D01A7-51C8-4BF8-A7C9-9317FB466E34}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D6D01A7-51C8-4BF8-A7C9-9317FB466E34}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D6D01A7-51C8-4BF8-A7C9-9317FB466E34}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D6D01A7-51C8-4BF8-A7C9-9317FB466E34}.Release|Any CPU.Build.0 = Release|Any CPU
+		{174A6700-E9BE-42DC-8998-21B7163E0573}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{174A6700-E9BE-42DC-8998-21B7163E0573}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{174A6700-E9BE-42DC-8998-21B7163E0573}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{174A6700-E9BE-42DC-8998-21B7163E0573}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{424D6E6C-09E1-41E9-A632-FBFA78AA0D40} = {6C0D0EAC-3F7C-4A45-B0D4-088777571204}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {75ADB309-4568-4B5D-8A93-EDDF9D0F6EB6}
+	EndGlobalSection
+EndGlobal

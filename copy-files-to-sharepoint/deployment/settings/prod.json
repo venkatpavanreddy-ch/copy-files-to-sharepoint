@@ -1,0 +1,13 @@
+{
+    "ServerName": "localhost",
+    "LeberDWSConnectionString": "Data Source=(localdb)\\;database=;",
+    "UserName": "\\administrator",
+    "SourcePath": "C:\\_temp\\CopyFiles\\source\\Webportal SDS\\",
+    "DestinationPublicFolder": "Temp_Public",
+    "DestinationPrivateFolder": "Temp_Private",
+    "IsOneTimeJob": "true",
+    "CanDelete": "false",
+    "DbUserName": "",
+    "ServiceAccount": "administrator",
+    "SiteUrl": "https://sharepoint.com/sites/SharepointSite/"
+}
